@@ -1,0 +1,70 @@
+@import "//at.alicdn.com/t/font_2434330_kzref1ial3.css";
+/* 多页面共享的CSS代码 */
+
+body {
+    font-family: Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.btn{
+    background: #41ac52;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+}
+.btn:disabled{
+    background: rgba(66, 189, 86, .5);
+    cursor: not-allowed;
+}
+
+.aside-left {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.section {
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.section:nth-child(even) {
+    padding: 40px 0 20px;
+    background: #f7f7f7;
+}
+.aside-right {
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}
+
+.main {
+    /* 创建BFC */
+    overflow: hidden;
+}
+.container {
+    width: 950px;
+    margin: 0 auto;
+}

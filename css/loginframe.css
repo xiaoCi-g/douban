@@ -1,0 +1,221 @@
+
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    height: 34px;
+    border: 1px solid #e4e6e5;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+ input[type="text"].move-text-indent{
+    padding-left: 65px;
+}
+
+
+.content{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    line-height: 2;
+    padding: 30px 10px 10px;
+    color: #9b9b9b;
+    box-sizing: border-box;
+}
+.content .login .switch-menu{
+    border-bottom: 1px solid #ececec;
+    font-size: 13px;
+}
+.content .login .switch-menu span{
+    width: 50%;
+    text-align: center;
+}
+.content .login .switch-menu span.active{
+    font-weight: bold;
+    color:#333;
+    border-bottom: 1px solid #494949;
+    margin-bottom: -1px;
+}
+.content .login .form .form-item{
+    position: relative;
+    font-size: 13px;
+    margin: 10px 0;
+}
+.content .login .form .form-item .ab-right{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    line-height: 34px;
+}
+.content .form .form-item .txt{
+    font-size: 12px;
+}
+.content .form  a{
+    color: #41ac52;
+}
+.content .form .form-item .country-cod{
+    position: absolute;
+    width: 51px;
+    height: 26px;
+    left: 0;
+    top: 5px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 26px;
+    border-right: 1px solid #e4e6e5;
+    font-family: Helvetica;
+    cursor: pointer;
+}
+.content .form .form-item .country-cod .choose-area{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255,.5);
+    z-index: 1;
+}
+.content .form .form-item .country-cod .choose-area .center{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 282px;
+    height: 255px;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 5px;
+    cursor: auto;
+    overflow: hidden;
+}
+.country-cod .choose-area .center .title{
+    background: #ebf5eb;
+    height: 42px;
+    line-height: 42px;
+    text-align: left;
+    padding-left: 10px;
+    color: #060;
+    font-weight: bold;
+}
+.country-cod .choose-area .center ul{
+    height: 180px;
+    overflow: auto;
+    padding: 10px;
+    font-size: 14px;
+}
+.country-cod .choose-area .center ul li{
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid #e4e6e5;
+    border-bottom: 1px solid #e4e6e5;
+    margin-top: -1px;
+    cursor: pointer;
+}
+.country-cod .choose-area .center ul li.active{
+    color: #42bd56;
+}
+.country-cod .choose-area .center ul li .right{
+    color: #aaa;
+}
+.country-cod .choose-area .center ul li.active .right{
+    color: #42bd56;
+}
+.country-cod .choose-area .center ul li .iconfont{
+    margin-left: 10px;
+}
+.content .form-item .btn{
+    width: 100%;
+    height: 34px;
+    font-size: 15px;
+}
+.content .login .bottom{
+    border-top: 1px solid #ddd;
+    font-size: 11px;
+}
+.content .login .bottom .msg{
+    vertical-align: 2px;
+}
+.content .login .bottom .iconfont{
+    cursor: pointer;
+    margin-left: 12px;
+    font-size: 18px;
+}
+.content .login .bottom .icon-weixin{
+    color: #34950E;
+}
+.content .login .bottom .icon-weibo{
+    color: #EA5D5C;
+}
+
+.content .qrcode{
+    font-size: 13px;
+}
+.content .qrcode .title{
+    border-bottom: 1px solid #ececec;
+    color: #333;
+    font-weight: bold;
+}
+.content .qrcode .code{
+    margin-top: 20px;
+    text-align: center;
+   font-size: 0;
+}
+.content .qrcode .code img{
+    width: 170px;
+    height: 170px;
+   
+}
+.content .qrcode .tip{
+    width: 183px;
+    height: 25px;
+    padding: 3px 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 13px;
+    background-color: rgba(0,0,0,.08);
+    color: #494949;
+}
+.content .change{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+}
+.content .change .icon{
+    width: 30px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+}
+.content .change .icon-qrcode{
+    background: url(../img/icon-qrcode.png) no-repeat left top/100% 100%;
+}
+.content .change .icon-pc{
+    background: url(../img/icon-pc.png) no-repeat left top/100% 100%;
+}
+.content .change:hover+.pointer{
+    display: block;
+}
+.content .pointer{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    background: #f5faf9;
+    padding: 3px 5px;
+    color: #666;
+    border: 1px solid rgba(66,189,86,.3);
+
+}
